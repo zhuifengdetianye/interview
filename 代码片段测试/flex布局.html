@@ -1,0 +1,187 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title></title>
+    <style>
+    .ex{
+        float: left;
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        border: 1px solid #000;
+    }
+    .dot{
+        width: 50px;
+        height: 50px;
+        border: 1px solid #f00;
+    }
+    .ex1{
+        display: flex;
+    }
+    .ex2{
+        display: flex;
+        /*justify-content:定义在主轴上的对齐方式*/
+        justify-content: center;
+    }
+    .ex3{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .ex4{
+        display: flex;
+        /*align-items:设置项目在交叉轴上的对其方式*/
+        align-items: center;
+    }
+    .ex5{
+        display: flex;
+        align-items: flex-end;
+    }
+    .ex6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ex7{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .ex8{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .ex9{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ex10{
+        display: flex;
+        /*决定主轴的方向row、row-reverse、column、column-reverse*/
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+    .ex11{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ex12{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .ex13{
+        display: flex;
+    }
+    .ex13 .dot:nth-child(2){
+        align-self: center;
+    }
+    .ex13 .dot:nth-child(3){
+        align-self: flex-end;
+    }
+    .ex14{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: space-between;
+    }
+    .ex15{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .ex15 .column{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+    .main{
+        clear:both;
+        display: flex;
+    }
+    .main .box1{
+        height: 200px;
+        flex: 1;
+        background:#f00;
+    }
+    .main .box2,
+    .main .box3{
+        height: 200px;
+        flex: 0 0 200px;
+        background: #0f0;
+    }
+    </style>
+</head>
+<body>
+    <div class="ex ex1">
+        <div class="dot dot1"></div>
+    </div>
+    <div class="ex ex2">
+        <div class="dot dot1"></div>
+    </div>
+    <div class="ex ex3">
+        <div class="dot dot1"></div>
+    </div>
+    <div class="ex ex4">
+        <div class="dot dot1"></div>
+    </div>
+    <div class="ex ex5">
+        <div class="dot dot1"></div>
+    </div>
+    <div class="ex ex6">
+        <div class="dot dot1"></div>
+    </div>
+    <div class="ex ex7">
+        <div class="dot dot1"></div>
+    </div>
+    <div class="ex ex8">
+        <div class="dot dot1"></div>
+    </div>
+    <div class="ex ex9">
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div class="ex ex10">
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div class="ex ex11">
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div class="ex ex12">
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div class="ex ex13">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div class="ex ex14">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div class="ex ex15">
+        <div class="column">
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="column">
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="box box2"></div>
+        <div class="box box1"></div>
+        <div class="box box3"></div>
+    </div>
+</body>
+</html>
